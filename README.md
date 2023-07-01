@@ -1,4 +1,4 @@
-# Starting point
+# my-ublue-desktop
 
 [![build-ublue](https://github.com/nogeenkopjethee/my-ublue-desktop/actions/workflows/build.yml/badge.svg)](https://github.com/nogeenkopjethee/my-ublue-desktop/actions/workflows/build.yml)
 
