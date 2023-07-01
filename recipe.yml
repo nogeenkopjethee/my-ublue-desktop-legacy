@@ -42,6 +42,8 @@ rpm:
   repos:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
+  - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+  - https://copr.fedorainfracloud.org/coprs/kylegospo/gnome-vrr/repo/fedora-%FEDORA_VERSION%/kylegospo-gnome-vrr-fedora-%FEDORA_VERSION%.repo
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
   # performed via rpm-ostree during the image build, and will be pre-installed
@@ -57,6 +59,10 @@ rpm:
     # Add your own below:
     # Example:
     # - tilix
+    - zsh
+    - jetbrains-mono-fonts
+    - mozilla-fira-sans-fonts
+    - tailscale
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
