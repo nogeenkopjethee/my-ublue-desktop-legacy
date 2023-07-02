@@ -48,5 +48,4 @@ RUN rpm-ostree install /tmp/ublue-os-wallpapers-0.1-1.fc38.noarch.rpm && \
         chmod +x /tmp/scripts/build.sh && \
         /tmp/scripts/build.sh && \
         rm -rf /tmp/* /var/* && \
-	rpm-ostree override replace --experimental --from repo=copr:copr.fedorainfracloud.org:kylegospo:gnome-vrr mutter gnome-control-center gnome-control-center-filesystem xorg-x11-server-Xwayland && \
         ostree container commit
