@@ -1,0 +1,2 @@
+# This workaround is currently necessary. See https://copr.fedorainfracloud.org/coprs/kylegospo/gnome-vrr/
+MUTTER_DEBUG_FORCE_KMS_MODE=simple
