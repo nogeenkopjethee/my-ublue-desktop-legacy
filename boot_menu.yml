@@ -1,5 +1,11 @@
 ublue_variants:
-  - label: ublue-os/startingpoint
+  - label: nogeenkopjethee/my-ublue-desktop
     ks: /kickstart/ublue-os.ks
     flavors:
-      - label: startingpoint
+      - label: my-ublue-desktop 
+        info: Specialized uBlue image for my desktop PC. Uses gnome-vrr.
+  - label: nogeenkopjethee/my-ublue-laptop
+    ks: /kickstart/ublue-os-nvidia.ks
+    flavors: 
+      - label: my-ublue-laptop
+        info: Specialized uBlue image for my laptop. Uses NVidia drivers.
