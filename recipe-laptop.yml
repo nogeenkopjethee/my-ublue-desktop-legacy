@@ -1,10 +1,10 @@
 # This file can only be edited inside the uBlue image's git repository.
 
 # The image will be at "ghcr.io/yourusername/name".
-name: my-ublue-desktop
+name: my-ublue-laptop
 # The native container image to build on top of.
 # Warning: Non-uBlue images might not work properly, due to missing components.
-base-image: ghcr.io/ublue-os/silverblue-main
+base-image: ghcr.io/ublue-os/silverblue-nvidia
 # What Fedora version to use. Use an explicit version or `latest`.
 # If you use `latest`, you will be automatically updated to the next major
 # Fedora version, assuming the image you're using as your base container
@@ -31,7 +31,6 @@ scripts:
     - autorun.sh
     # Manually listed scripts.
     # - example_post.sh
-    - install-gnome-vrr.sh
 # Custom RPM configuration.
 # These changes will be integrated into your custom image at the "system level".
 rpm:
@@ -44,7 +43,6 @@ rpm:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
-    - https://copr.fedorainfracloud.org/coprs/kylegospo/gnome-vrr/repo/fedora-%FEDORA_VERSION%/kylegospo-gnome-vrr-fedora-%FEDORA_VERSION%.repo
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
   # performed via rpm-ostree during the image build, and will be pre-installed
@@ -64,7 +62,6 @@ rpm:
     - jetbrains-mono-fonts
     - mozilla-fira-sans-fonts
     - tailscale
-    - corectrl
   # These RPMs will be removed from the system image. This step happens during
   # image build, BEFORE installing custom RPMs (from the "rpm.install" category).
   remove:
