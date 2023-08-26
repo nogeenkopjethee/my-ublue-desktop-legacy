@@ -3,7 +3,7 @@ ublue_variants:
     ks: /kickstart/ublue-os.ks
     flavors:
       - label: my-ublue-desktop 
-        info: Specialized uBlue image for my desktop PC. Uses gnome-vrr.
+        info: Specialized uBlue image for my desktop PC. Adds support for VRR, undervolting and RGB lighting.
   - label: nogeenkopjethee/my-ublue-laptop
     ks: /kickstart/ublue-os-nvidia.ks
     flavors: 
