@@ -5,4 +5,4 @@
 # builds actually ran successfully without any errors!
 set -oue pipefail
 
-rpm-ostree override replace --experimental --from repo=copr:copr.fedorainfracloud.org:nxmbit:gnome-perf-patches mutter 
+rpm-ostree override replace --experimental --from repo=copr:copr.fedorainfracloud.org:nxmbit:gnome-perf-patched mutter
