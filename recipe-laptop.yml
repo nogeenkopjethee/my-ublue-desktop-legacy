@@ -29,6 +29,7 @@ scripts:
   post:
     # Automatically runs script files within "scripts/post/".
     - autorun.sh
+    - install-gnome-patched.sh
     # Manually listed scripts.
     # - example_post.sh
 # Custom RPM configuration.
@@ -43,6 +44,7 @@ rpm:
   # Example (which also demonstrates version number expansion):
   # - https://copr.fedorainfracloud.org/coprs/atim/starship/repo/fedora-%FEDORA_VERSION%/atim-starship-fedora-%FEDORA_VERSION%.repo
     - https://pkgs.tailscale.com/stable/fedora/tailscale.repo
+    - https://copr.fedorainfracloud.org/coprs/nxmbit/gnome-perf-patched/repo/fedora-%FEDORA_VERSION%/nxmbit-gnome-perf-patched-fedora-%FEDORA_VERSION%.repo
   # These RPMs will be installed from your enabled repositories (Fedora's own
   # repos, extra "repos" you've added, etc). The installation is automatically
   # performed via rpm-ostree during the image build, and will be pre-installed
